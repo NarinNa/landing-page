@@ -1,0 +1,342 @@
+body {
+  background-color: rgb(255, 255, 179);
+}
+#firstbee,
+#secondbee {
+  background: repeating-linear-gradient(to right, #1a0d00, orange 15%);
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  border-right: 25px solid orange;
+  border-top: 10px solid rgba(77, 38, 0, 0.8);
+  border-bottom: 10px solid rgba(77, 38, 0, 0.8);
+}
+#firstbee {
+  margin-left: -100px;
+  margin-top: -250px;
+  position: absolute;
+  animation: move1 25s infinite;
+}
+
+#firstanten,
+#secondanten {
+  position: absolute;
+  margin-left: 90px;
+  background-color: black;
+  width: 55px;
+  height: 3px;
+  z-index: 1;
+}
+#firstanten {
+  margin-top: 25px;
+  transform: rotate(-20deg);
+}
+#secondanten {
+  margin-top: 35px;
+  transform: rotate(4deg);
+}
+
+#eye1,
+#eye2 {
+  position: absolute;
+  margin-left: 65px;
+  background-color: black;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+#eye1 {
+  margin-top: 15px;
+}
+#eye2 {
+  margin-top: 35px;
+}
+
+@keyframes move1 {
+  0% {
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+
+  100% {
+    margin-left: 2000px;
+    margin-top: 2000px;
+  }
+}
+
+#secondbee {
+  margin-left: -100px;
+  margin-top: 250px;
+  position: absolute;
+  animation: move2 25s infinite;
+}
+
+#firstanten2,
+#secondanten2 {
+  position: absolute;
+  margin-left: 90px;
+  background-color: black;
+  width: 55px;
+  height: 3px;
+  z-index: 1;
+}
+#firstanten2 {
+  margin-top: 25px;
+  transform: rotate(-20deg);
+}
+#secondanten2 {
+  margin-top: 35px;
+  transform: rotate(4deg);
+}
+
+#eye21,
+#eye22 {
+  position: absolute;
+  margin-left: 65px;
+  background-color: black;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+#eye21 {
+  margin-top: 15px;
+}
+#eye22 {
+  margin-top: 35px;
+}
+
+@keyframes move2 {
+  0% {
+    margin-left: -100px;
+    margin-top: 250px;
+  }
+
+  100% {
+    margin-left: 2000px;
+    margin-top: -500px;
+  }
+}
+
+header {
+  z-index: 1;
+  position: fixed;
+  margin-top: -15px;
+  height: 150px;
+  background-color: rgb(255, 255, 179);
+}
+
+#logo {
+  margin-top: -5px;
+  margin-left: -15px;
+}
+
+#name {
+  margin-top: -85px;
+  margin-left: 130px;
+  font-family: serif;
+  color: rgb(77, 77, 51);
+}
+
+#uList {
+  margin-left: 1000px;
+  list-style-type: none;
+}
+
+.nav {
+  display: inline;
+  box-shadow: 1px 1px 1px 2px rgb(0, 153, 51);
+  width: 100px;
+  margin: 8px;
+}
+
+a:link {
+  text-decoration: none;
+  color: rgb(77, 77, 51);
+}
+
+a:hover {
+  color: rgb(0, 0, 77);
+  background-color: rgb(204, 255, 255);
+}
+
+a:visited {
+  color: rgb(77, 77, 51);
+}
+
+#search {
+  position: absolute;
+  margin-top: 250px;
+  margin-left: 600px;
+  color: rgb(77, 77, 51);
+}
+
+#intro {
+  color: rgb(77, 77, 51);
+  position: absolute;
+  margin-top: 400px;
+  margin-left: 600px;
+}
+
+#article {
+  color: rgb(77, 77, 51);
+  line-height: 1.4;
+  font-family: serif;
+  position: absolute;
+  margin-top: 450px;
+  margin-left: 480px;
+  width: 600px;
+}
+
+#symbol {
+  position: absolute;
+  margin-top: 600px;
+  margin-left: 30px;
+}
+
+.icons {
+  position: absolute;
+  margin-top: 10px;
+  box-shadow: 1px 1px 3px 3px rgba(0, 153, 51, 0.5);
+  border-radius: 100%;
+}
+
+.icons:hover {
+  box-shadow: 1px 1px 3px 3px rgba(255, 191, 0, 0.5);
+  width: 120px;
+}
+
+.toDo {
+  margin-left: 120px;
+  display: inline-block;
+  color: rgb(77, 77, 51);
+  line-height: 1.4;
+  font-family: serif;
+  width: 300px;
+}
+
+#video {
+  position: absolute;
+  margin-top: 1200px;
+  margin-left: 400px;
+}
+video {
+  box-shadow: 1px 1px 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+#table {
+  position: absolute;
+  margin-top: 1600px;
+  margin-left: 80px;
+}
+
+td {
+  padding: 25px;
+  box-shadow: 1px 1px 3px 3px rgba(0, 153, 51, 0.5);
+}
+
+h3 {
+  margin-left: 600px;
+  color: rgb(77, 77, 51);
+}
+
+#first {
+  background-size: cover;
+  background-image: url("https://images.pexels.com/photos/1148998/pexels-photo-1148998.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  height: 300px;
+  width: 400px;
+  animation: one 35s infinite;
+}
+
+#second {
+  background-size: cover;
+  background-image: url("https://images.pexels.com/photos/35545/watermelon-summer-little-girl-eating-watermelon-food.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  height: 300px;
+  width: 400px;
+  animation: two 35s infinite;
+}
+
+#third {
+  background-size: cover;
+  background-image: url("https://images.pexels.com/photos/296301/pexels-photo-296301.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  height: 300px;
+  width: 400px;
+  animation: three 35s infinite;
+}
+
+@keyframes one {
+  20% {
+    background-image: url("https://images.pexels.com/photos/730807/pexels-photo-730807.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  }
+  40% {
+    background-image: url("https://images.pexels.com/photos/159579/crayons-coloring-book-coloring-book-159579.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  }
+  60% {
+    background-image: url("https://images.pexels.com/photos/97064/pexels-photo-97064.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  }
+  80% {
+    background-image: url("https://images.pexels.com/photos/998067/pexels-photo-998067.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  }
+  100% {
+    background-image: url("https://images.pexels.com/photos/707193/pexels-photo-707193.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  }
+}
+
+@keyframes two {
+  20% {
+    background-image: url("https://images.pexels.com/photos/1001914/pexels-photo-1001914.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  }
+  40% {
+    background-image: url("https://images.pexels.com/photos/34701/cooks-confectioner-children-s-sweets.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  }
+  60% {
+    background-image: url("https://images.pexels.com/photos/573298/pexels-photo-573298.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  }
+  80% {
+    background-image: url("https://images.pexels.com/photos/129426/pexels-photo-129426.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  }
+  100% {
+    background-image: url("https://images.pexels.com/photos/6459/sand-summer-outside-playing.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  }
+}
+
+@keyframes three {
+  20% {
+    background-image: url("https://images.pexels.com/photos/434400/pexels-photo-434400.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  }
+  40% {
+    background-image: url("https://images.pexels.com/photos/573259/pexels-photo-573259.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  }
+  60% {
+    background-image: url("https://images.pexels.com/photos/532321/pexels-photo-532321.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  }
+  80% {
+    background-image: url("https://images.pexels.com/photos/325521/pexels-photo-325521.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  }
+  100% {
+    background-image: url("https://images.pexels.com/photos/36745/girls-children-tulips-netherlands.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  }
+}
+
+#form {
+  position: absolute;
+  margin-top: 2000px;
+  margin-left: 200px;
+  color: rgb(77, 77, 51);
+}
+
+input {
+  background-color: rgba(0, 153, 51, 0.4);
+  color: rgb(77, 77, 51);
+}
+
+#address {
+  position: absolute;
+  margin-top: 2000px;
+  margin-left: 1000px;
+  color: rgb(77, 77, 51);
+}
+hr {
+  width: 200px;
+}
