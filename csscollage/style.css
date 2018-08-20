@@ -1,0 +1,151 @@
+* {
+margin: 0;
+padding: 0;
+}
+body{
+ background: repeating-linear-gradient(90deg, rgba(0, 139, 139, 0.7), rgba(255, 140, 0, 0.7) 10%, rgba(189, 183, 107, 0.8) 20%, rgba(0, 139, 139, 0.7) 30%);
+}
+.main{
+
+    width: 500px;
+		margin: 100px auto;
+    position: relative;
+    display: inline-block;
+}
+
+img {
+ position: absolute;
+height: 250px;
+width: 350px;
+border: 10px solid white;
+filter: sepia(100%);
+}
+div:nth-child(1) {
+position: relative;
+margin-left: 250px;
+transform: rotate(5deg);
+top: 100px;
+}
+
+div:nth-child(2) {
+margin-top: -100px;
+position: absolute;
+margin-left: 250px;
+transform: rotate(5deg);
+}
+div:nth-child(3) {
+margin-top: -90px;
+position: absolute;
+margin-left: 400px;
+transform: rotate(-10deg);
+}
+
+div:nth-child(4) {
+position: absolute;
+margin-left: 450px;
+margin-top: 150px;
+transform: rotate(-3deg);}
+
+ div:nth-child(5) {
+position: absolute;
+margin-left: 600px;
+margin-top: -100px;
+transform: rotate(5deg);
+}
+
+img:hover {
+  filter: none;
+  }
+
+div:nth-child(2):hover {
+margin-top: -100px;
+position: absolute;
+margin-left: 250px;
+transform: rotate(-5deg);
+transition: all 0.4s linear;
+z-index: 1;
+}
+div:nth-child(3):hover {
+margin-top: -90px;
+position: absolute;
+margin-left: 400px;
+transform: rotate(-4deg);
+transition: all 0.4s linear;
+z-index: 1;
+}
+
+div:nth-child(4):hover {
+position: absolute;
+margin-left: 450px;
+margin-top: 150px;
+transform: rotate(-5deg);
+transition: all 0.4s linear;
+z-index: 1;}
+
+div:nth-child(5):hover {
+position: absolute;
+margin-left: 600px;
+margin-top: -100px;
+transform: rotate(-5deg);
+transition: all 0.4s linear;
+}
+
+.bubble {
+ border-radius: 50%;
+ opacity: 0.3;
+}
+.one {
+  position: relative;
+  height: 100px;
+  width: 100px;
+  background-color: rgb(0, 139, 139);
+}
+
+.two {
+  position: relative;
+  height: 40px;
+  width: 40px;
+  background-color: rgb(255, 140, 0);
+  left: 400px;
+}
+.three {
+  position: relative;
+  height: 150px;
+  width: 150px;
+  background-color: rgb(255, 140, 0);
+  left: 300px;
+}
+.four {
+  position: relative;
+  height: 50px;
+  width: 50px;
+  background-color: rgb(0, 139, 139) ;
+  top:300px;
+  left: 10px;
+}
+
+.five {
+  position: relative;
+  height: 150px;
+  width: 150px;
+  background-color: rgb(255, 140, 0);
+  top:100px;
+  left: 200px;
+}
+
+.six {
+  position: relative;
+  height: 200px;
+  width: 200px;
+  background-color:rgb(0, 139, 139);
+  top:-300px;
+  left: 1200px;
+}
+.seven {
+  position: relative;
+  height: 90px;
+  width: 90px;
+  background-color:rgb(255, 140, 0);
+  top:-50px;
+  left: 1200px;
+}
